@@ -2,21 +2,43 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.solution {
+  background-color: #282e3a;
+  min-height: 95vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.cell {
+  font-size: calc(10px + 1vmin);
+  text-align: center;
+  width: 25vh;
+}
+
+.cell.readOnly {
+  background-color: #3f7fff;
+  color: rgb(2, 0, 0);
+  font-weight: bold;
 }
