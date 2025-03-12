@@ -17,7 +17,7 @@
 }
 
 .solution {
-  background-color: #282e3a;
+  background-color: #083797;
   min-height: 95vh;
   color: white;
   display: flex;
@@ -26,19 +26,28 @@
   flex-direction: column;
 }
 
-.row {
-  margin: 0;
-  padding: 0;
+.sheet__wrapper {
+  background-color: rgb(6, 10, 117);
+  padding: 25px 35px;
+  display: flex;
 }
 
 .cell {
-  font-size: calc(10px + 1vmin);
-  text-align: center;
-  width: 25vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.cell.readOnly {
-  background-color: #3f7fff;
-  color: rgb(2, 0, 0);
-  font-weight: bold;
+.cell input {
+  text-align: center;
+  margin-top: .3rem;
+  font-size: 14px;
+  padding: .2rem .5rem;
+}
+
+.cell input:focus {
+  outline: none;
+}
+
+.cell label {
+  font-size: 18px;
 }
